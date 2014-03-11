@@ -13,7 +13,7 @@ This fieldtype could be useful for any entries that are generated outside of the
       my_field:
         type: readonly
 
-## Simple array
+### Simple array
 When your data is formatted as a simple array, like Bison saves `customer_data` fields:
 
     custom_data:
