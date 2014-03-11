@@ -35,26 +35,26 @@ Set your field up like so:
 ### Grid / multidimensional array
 When your data is formatted in a multidimensional array, like Grid saves its data, or how Bison saves `items` in order details:
 
-    my_field:
+    items:
       -
-        title: Thing one
-        url: /thing-one
-        id: 3424112415432
-        foo: bar
+        id: 12345
+        title: My Product
+        url: /products/my-product
+        price: 5
       -
-        title: Another thing
-        url: /another-thing
-        id: 65466244
-        foo: baz
+        id: 4567
+        title: Another Product
+        url: /products/another-product
+        price: 5
 
 Set your field up like so:
 
     fields:
-      my_field:
+      items:
         type: readonly
         fields:
-          url: URL
-        exclude: [id, foo]
+          title: Product Name
+        exclude: [id, url]
 
 All fields will be displayed by default. `exclude` will allow you to remove fields from the table.  
 The `fields` option is also available here.
